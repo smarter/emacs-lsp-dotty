@@ -42,7 +42,5 @@
  (lsp-dotty--get-root)
  (lsp-dotty--ls-command))
 
-(add-hook 'scala-mode-hook #'lsp-scala-mode-enable)
-
 (provide 'lsp-dotty)
 ;;; lsp-dotty.el ends here
