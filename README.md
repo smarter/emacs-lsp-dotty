@@ -40,6 +40,7 @@ sbt ;configureIDE;~compileForIDE
 
 
 - Install and configure [lsp-mode](https://github.com/emacs-lsp/lsp-mode)
+- Install and configure [lsp-ui](https://github.com/emacs-lsp/lsp-ui)
 - Install scala-mode from MELPA
 - Clone this repo and add the following to your config:
 
