@@ -34,16 +34,15 @@
        )))
 
 (defun lsp-dotty--get-root ()
-  (lsp-make-traverser
-   #'(lambda (dir)
-       (directory-files dir nil ".sbt"))))
   (lsp-make-traverser "project"))
 
-(lsp-define-stdio-client 'scala-mode "scala" 'stdio (lsp-dotty--get-root)
-			 "Dotty Language Server"
-			 (lsp-dotty--ls-command))
+(lsp-define-stdio-client
+ lsp-scala-mode
+ "scala"
+ (lsp-dotty--get-root)
+ (lsp-dotty--ls-command))
 
-(lsp-flycheck-add-mode 'scala-mode)
+(add-hook 'scala-mode-hook #'lsp-scala-mode-enable)
 
 (provide 'lsp-dotty)
 ;;; lsp-dotty.el ends here
