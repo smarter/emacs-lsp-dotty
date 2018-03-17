@@ -1,7 +1,7 @@
 ;;; lsp-dotty.el --- Dotty support for lsp-mode
 
 ;; Version: 1.0
-;; Package-Requires: ((emacs "25.1") (lsp-mode "2.0"))
+;; Package-Requires: ((emacs "25.1") (lsp-mode "4.0"))
 ;; Keywords: scala
 ;; URL: https://github.com/lampepfl/lsp-dotty
 
