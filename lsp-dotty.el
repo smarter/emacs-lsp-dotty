@@ -37,6 +37,7 @@
   (lsp-make-traverser
    #'(lambda (dir)
        (directory-files dir nil ".sbt"))))
+  (lsp-make-traverser "project"))
 
 (lsp-define-stdio-client 'scala-mode "scala" 'stdio (lsp-dotty--get-root)
 			 "Dotty Language Server"
